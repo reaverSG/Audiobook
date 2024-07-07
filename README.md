@@ -1,25 +1,30 @@
+roject Title: PDF to Audiobook Converter in Python
+
 Description:
-This project aims to create an audiobook using Python, leveraging text-to-speech functionality. The current implementation is a work-in-progress and may encounter issues. The code attempts to convert text files into spoken audio using Python libraries, but users may encounter bugs related to text processing, audio playback, or library compatibility. Contributions and feedback are welcome to improve functionality and resolve issues.
+This Python script aims to convert PDF files into audiobooks using text-to-speech (TTS) technology. The script leverages pdfplumber for PDF text extraction and gTTS for generating audio files. Please note that the current implementation may encounter issues and requires improvements for robust functionality.
 
 Features:
 
-Text-to-speech conversion for plain text files.
-Basic navigation and playback controls.
-Integration with Python's pyttsx3 or gTTS for speech synthesis.
+Converts PDF documents into spoken audio (MP3 format).
+Utilizes pdfplumber for PDF text extraction.
+Uses gTTS (Google Text-to-Speech) for audio synthesis.
+Handles multiple pages in a PDF document.
 Current Issues:
 
-Text segmentation issues affecting speech clarity.
-Audio playback interruptions and errors.
-Compatibility issues with specific operating systems or Python versions.
+Inconsistent text extraction from PDF pages.
+Potential interruptions in audio generation.
+Dependency on uninterrupted internet access for gTTS usage.
+Steps to Use:
+
+Ensure Python environment is set up with necessary libraries (pdfplumber, gTTS).
+Define the pdf_path variable to point to the PDF file you wish to convert.
+Run the script. It extracts text from each page of the PDF with a slight delay (time.sleep(0.5)) to manage processing.
+If text extraction is successful (checked with if full_text.strip() == ""), it proceeds to convert the extracted text into an audiobook.
+The audiobook is saved as audiobook.mp3 in the script's directory.
+Upon completion, a message confirms that the audiobook has been saved.
 Contributing:
-Contributions are encouraged! Feel free to fork the repository, address existing issues, or suggest enhancements. Please follow the contribution guidelines and code of conduct.
+Contributions are welcome to improve text extraction reliability, handle edge cases, and enhance overall script stability. Please follow the project's guidelines and contribute responsibly.
 
-Usage:
-
-Clone the repository.
-Install dependencies (pyttsx3, gTTS, etc.).
-Run main.py and provide a text file to convert into an audiobook.
 License:
-This project is licensed under the MIT License - see the LICENSE file for details.
-
+This project is licensed under the MIT License. See the LICENSE file for details.
 
