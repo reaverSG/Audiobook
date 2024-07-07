@@ -1,4 +1,4 @@
-roject Title: PDF to Audiobook Converter in Python
+Project Title: PDF to Audiobook Converter in Python
 
 Description:
 This Python script aims to convert PDF files into audiobooks using text-to-speech (TTS) technology. The script leverages pdfplumber for PDF text extraction and gTTS for generating audio files. Please note that the current implementation may encounter issues and requires improvements for robust functionality.
